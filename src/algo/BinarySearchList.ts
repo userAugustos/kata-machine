@@ -8,10 +8,11 @@ export default function bs_list(haystack: number[], needle: number): boolean {
 		const value = haystack[mid]
 
 		if(value === needle){
+			// return haystack[mid] # here we return the index
 			return true;
 		} else if(value > needle) {
 			hi = mid
-		} else { // (value < mid)
+		} else { // (value < needle)
 			lo = mid + 1
 		}
 
