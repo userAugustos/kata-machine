@@ -1,3 +1,5 @@
+// insertion and deleting in linked list is O(1)
+
 export default class SinglyLinkedList<T> {
     public length: number;
 
