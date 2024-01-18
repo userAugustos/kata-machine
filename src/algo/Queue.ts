@@ -22,8 +22,9 @@ export default class Queue<T> {
             this.tail = this.head = node
             return;
         };
-
+        // current tail, doesn't have a next, because u are the current last, but i added another, so now i point to this new node
         this.tail.next = node
+        // and after adding the pointer, we pass the new element, as the tail, because now, he is the last element
         this.tail = node
 
         console.debug(this.tail)
