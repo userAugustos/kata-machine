@@ -1,6 +1,6 @@
 export default function bs_list(haystack: number[], needle: number): number {
-	let low = 0
 	let hi = haystack.length
+	let low = 0
 
 	do {
 		const mid = Math.floor(low + (hi - low) /2)
